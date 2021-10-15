@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12513.MainPage">
+
+    
+     
+    <!--<ContentPage.ToolbarItems >
+        <ToolbarItem Text="NUEVA UBICACION"
+                     Clicked="toolbar01_Clicked"
+                     x:Name="toolbar01" ></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>-->
+    <StackLayout  Padding="5,10,5,10" >
+
+        <StackLayout Orientation="Horizontal"  BackgroundColor="Gray" Padding="2,2,2,2">
+        <Button Text="Nueva Ubicacion" FontSize="15" FontAttributes="Bold" x:Name="btn01" Clicked="btn01_Clicked" 
+              WidthRequest="160" HeightRequest="45" 
+             CornerRadius="60" VerticalOptions="Start" HorizontalOptions ="Start" BackgroundColor   ="Blue" Margin="0,3,0,3"/>
+
+        <Button Text="Ubicaciones Guardadas" FontSize="15" FontAttributes="Bold" 
+            x:Name="btn02"  Clicked="btn02_Clicked"
+            WidthRequest="215" HeightRequest="45" CornerRadius="60" VerticalOptions="EndAndExpand" 
+            HorizontalOptions ="EndAndExpand" BackgroundColor="Blue" Margin="0,3,0,3"/>
+
+    </StackLayout>
+
+    
+
+        <Image Source="https://www.uth.hn/wp-content/uploads/2020/01/204-300x184.png"
+               HeightRequest="90" />
+
+        <Label Text="Latitud" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtlatitud" TextColor="Black" />
+
+        <Label Text="Longitud" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text"  TextColor="Black" x:Name="txtlongitud" />
+
+        <Label Text="Describa la Ubicacion" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtdescripcion"/>
+
+        <Label Text="Descripcion Corta" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtdcorta"/>
+
+        <Button Text="Salvar Ubicacion" x:Name="btnguardar" FontSize="15" FontAttributes="Bold" 
+          WidthRequest="220" Clicked="btnguardar_Clicked"
+         HeightRequest="50" CornerRadius="60" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="Green"/>
+
+        <Button Text="Ubicaciones Salvadas " x:Name="ubicaciones" FontSize="15" FontAttributes="Bold" 
+         WidthRequest="220"
+         HeightRequest="50" CornerRadius="60" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="Green" Clicked="btn02_Clicked"/>
+
+    </StackLayout>
+
+
+
+
+</ContentPage>
